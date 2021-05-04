@@ -1,5 +1,4 @@
-![Tibbit #43-1 Isometric Render](images/tibbit-43_1.png)
-![Tibbit #43-1 Wiring Diagram](images/tibbit_43-1.svg)
+<img src="./images/tibbit-43_1.png" width="26%"><img src="./images/tibbit_43-1.svg" width="74%">
 
 # Tibbit #43-1
 
