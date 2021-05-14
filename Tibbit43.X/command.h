@@ -4,6 +4,7 @@
  * Author:  Dmitry Tarasov
  * License: GPLv3
  * Copyright (c) 2021. Tibbo Technology Inc. 
+ * SPDX-License-Identifier: GPL-3.0
  */
 
 // This is a guard condition so that contents of this file are not included
