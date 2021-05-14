@@ -721,7 +721,11 @@ void operateSendOneSample(SEQUENCE_CHANNELS* sequencer, ADC_RAW* adcValues, bool
         
     for (_i = 0; _i < sequencer->NumSeqChannels; _i++) {
         if ((operateData == OPERATE_DATA_BIN) || (operateData == OPERATE_DATA_HEX)) 
-            operateSendSample((((uint16_t)sequencer->SeqChannels[_i]) << 14) | (_results.ADC[_i] & 0x2fff));
+            if (operateSample == OPERATE_SAMPLE_DIFF) {
+                operateSendSample((((uint16_t)sequencer->SeqChannels[_i]) << 14) | _results.ADC[_i]);
+            } else {
+                operateSendSample((((uint16_t)sequencer->SeqChannels[_i]) << 14) | (_results.ADC[_i] & 0x2fff));
+            }
         else
             operateSendSample(_results.ADC[_i]);
         
