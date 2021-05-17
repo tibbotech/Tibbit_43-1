@@ -30,14 +30,14 @@ All components related to microchip drivers and peripherals are located inisde t
 
 ## Firmware Upgrades
 
-The microcontroller's firmware can be upgraded in the system without any external hardware. Firmware updates take place through the microcontroller's low-voltage programming (LVP) mode. The Tibbit's TX line acts as SCL, the RX line as SDA, and the –MCLR line puts the microcontroller into the LVP mode.
+The microcontroller's firmware can be upgraded in the system without any external hardware. Firmware updates take place through the microcontroller's low-voltage programming (LVP) mode. The Tibbit's TX line acts as ICSPCLK, the RX line as ICSPDAT, and the –MCLR line puts the microcontroller into the LVP mode.
 
 For more information on LVP, please see [this resource](https://microchipdeveloper.com/8bit:lvp).
 
 ## Application Notes
 
 There is a wide range of analog output transmitters and sensors used in industrial automation, process control, and data acquisition (DAQ) systems.
-These devices — such as water level sensors and industrial-grade resistance temperature detectors (RTDs) — usually have analog output of 0V–5V or 0V–10V.
+These devices — such as water level sensors and industrial-grade resistance temperature detectors (RTDs) — usually have analog output of 0–5V or 0–10V.
 Some of these transmitters output a linear waveform of changes that should be polled at a specific sampling rate and with high precision.
 Examples of these devices include:
 * PT100/PT1000 temperature transmitters
