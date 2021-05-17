@@ -38,7 +38,7 @@ const char CMD_ANSWER_OK[]                      = "A";
 const char CMD_ANSWER_ERROR_SYNTAX[]            = "C";
 const char CMD_ANSWER_ERROR_OUTRANGE[]          = "O";
 const char CMD_ANSWER_ERROR_EXECUTION[]         = "F";
-const char CMD_ANSWER_VERSION[]                 = "Tibbo Inc. Tibbit#43-1 FW1.2";
+const char CMD_ANSWER_VERSION[]                 = "Tibbo Inc. Tibbit#43-1 FW1.3";
 
 typedef enum {
     TYPE_ERROR,
