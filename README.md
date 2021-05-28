@@ -49,7 +49,7 @@ Examples of these devices include:
 
 Tibbit #43-1 — developed and manufactured by Tibbo Technology Inc. — is a robust solution for industrial environments. It features a user-friendly and reliable command interface implemented over UART.
 When combined with the [Tibbo Project System (TPS)](https://tibbo.com/store/tps.html) — particulary the [Size 3 Linux Tibbo Project PCB, Gen. 2](https://tibbo.com/store/tps/ltpp3g2.html) — Tibbit #43-1 can be used to realize a wide range of IoT, IIoT, and process control and monitoring solutions for a wide range of Industry 4.0 applications.
-The combination of this Tibbit and the TPS makes sensor-to-cloud, remote I/O, and IIoT deployments robust, use-friendly, and cost-effective.
+The combination of this Tibbit and the TPS makes sensor-to-cloud, remote I/O, and IIoT deployments robust, user-friendly, and cost-effective.
 
 As a member of the TPS platform, Tibbit #43-1 is fully supported by the [CODY project code generator](https://cody.tibbo.com), as well as Tibbo's dedicated support team. CODY accelerates the development of your IoT solutions by creating a framework for your project that uses Tibbo's best practices and reduces the amount of time you spend coding.
 
