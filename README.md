@@ -6,7 +6,7 @@ This repository contains the firmware for the PIC16F1825 microcontroller integra
 
 Tibbit #43-1 is based on the AD7323 12-bit+sign successive-approximation analog-to-digital converter IC. It offers four single-ended or two differential channels. In the differential mode, the data streams of two AC signals can be sampled for digital signal processing operations, such as phase detection and power quality factor calculations. However, special care must be taken, as this is not an isolated Tibbit.
 
-Tibbit #43-1 has an input range of ±10V in the single-ended mode and ±20V in the differential mode. Both are common output ranges of industrial pressure, temperature, and other types of transducers. This makes Tibbit #43-1 ideal for use in Internet of Things (IoT), Industrial IoT (IIoT), and industrial automation applications that require continuous sampling of instruments and on-the-fly analog-to-digital conversion of the data.
+Tibbit #43-1 has an input range of ±10V in the single-ended mode and ±20V in the differential mode. Both are common output ranges of industrial pressure, temperature, and other types of transducers. This makes Tibbit #43-1 ideal for Internet of Things (IoT), Industrial IoT (IIoT), and industrial automation applications that require continuous sampling of instruments and on-the-fly analog-to-digital conversion of the data.
 
 <br><br>
 
@@ -26,13 +26,15 @@ The files in this repo were designed to work with the MPLAB X integrated develop
 
 Most operations, including math and signal conditioning, are performed in `operate.c`.
 Parsing mechanisms and the command sequence are contained in `command.c`.
-All components related to microchip drivers and peripherals are located inisde the `mcc_generated_files` folder.
+All components related to microchip drivers and peripherals are located inside the `mcc_generated_files` folder.
 
 ## Firmware Upgrades
 
 The microcontroller's firmware can be upgraded in the system without any external hardware. Firmware updates take place through the microcontroller's low-voltage programming (LVP) mode. The Tibbit's TX line acts as ICSPCLK, the RX line as ICSPDAT, and the –MCLR line puts the microcontroller into the LVP mode.
 
 For more information on LVP, please see [this resource](https://microchipdeveloper.com/8bit:lvp).
+
+**Note:** The Tibbit is calibrated at the factory for precision. Before upgrading the firmware of your Tibbit, make sure to copy the values of the three calibration parameters (SA, SB, and SN); you will need to set them after completing the update. 
 
 ## Application Notes
 
@@ -48,14 +50,14 @@ Examples of these devices include:
 * CO<sub>2</sub> sensors
 
 Tibbit #43-1 — developed and manufactured by Tibbo Technology Inc. — is a robust solution for industrial environments. It features a user-friendly and reliable command interface implemented over UART.
-When combined with the [Tibbo Project System (TPS)](https://tibbo.com/store/tps.html) — particulary the [Size 3 Linux Tibbo Project PCB, Gen. 2](https://tibbo.com/store/tps/ltpp3g2.html) — Tibbit #43-1 can be used to realize a wide range of IoT, IIoT, and process control and monitoring solutions for a wide range of Industry 4.0 applications.
-The combination of this Tibbit and the TPS makes sensor-to-cloud, remote I/O, and IIoT deployments robust, user-friendly, and cost-effective.
+When combined with the [Tibbo Project System (TPS)](https://tibbo.com/store/tps.html) — particularly the [Size 3 Linux Tibbo Project PCB, Gen. 2](https://tibbo.com/store/tps/ltpp3g2.html) — Tibbit #43-1 can be used to realize a wide range of IoT, IIoT, and process control and monitoring solutions for a wide range of Industry 4.0 applications. The combination of this Tibbit and the TPS platform makes sensor-to-cloud, remote I/O, and IIoT deployments robust, user-friendly, and cost-effective.
 
 As a member of the TPS platform, Tibbit #43-1 is fully supported by the [CODY project code generator](https://cody.tibbo.com), as well as Tibbo's dedicated support team. CODY accelerates the development of your IoT solutions by creating a framework for your project that uses Tibbo's best practices and reduces the amount of time you spend coding.
 
 
 
 ## Useful links
+* [Tibbo](https://tibbo.com)
 * [Tibbit #43-1 — Official Product Page](https://www.tibbo.com/store/tps/tibbits.html#/?filter=%2343_1)
 * [Tibbit #43-1 — Official Documentation](https://docs.tibbo.com/phm/tibbit_43-1)
 * [Tibbit #43-1 Interface Protocol Documentation](https://docs.tibbo.com/phm/tibbit_43-1_interface)
